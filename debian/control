@@ -1,0 +1,34 @@
+Source: pardus-kde-desktop
+Section: metapackages
+Priority: optional
+Maintainer: Aliberk Sandıkçı <aliberk@asandikci.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.1
+Homepage: https://github.com/pardusc/pardus-kde-desktop
+
+Package: pardus-kde-desktop
+Architecture: all
+Depends: ${misc:Depends},
+ kde-plasma-desktop,
+ sddm,
+ pardus-common-desktop,
+ plasma-nm,
+ konsole,
+ dolphin
+Recommends:
+ ark,
+ calamares,
+ cups,
+ kate,
+ mpv,
+ okular,
+ pardus-about,
+ pardus-image-writer,
+ pardus-package-installer,
+ pardus-update,
+ pardus-usb-formatter,
+ pardus-software,
+ power-profiles-daemon,
+ unrar-free
+Description: KDE based Pardus desktop
+ This metapackage installs a KDE Plasma desktop on your Pardus system.
